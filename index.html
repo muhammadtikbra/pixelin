@@ -1,0 +1,1324 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pixelin - Jual Beli HP Google Pixel</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Google Fonts: Inter -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            pixel: {
+              pixelin: '#1a1c1e',
+              porcelain: '#f8f9fa',
+              hazel: '#5c6352',
+              mint: '#F5C5BE',
+              accent: '#D0311E',
+              accentHover: '#B82819'
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #1a1c1e;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #cbd5e1;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #94a3b8;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased min-h-screen flex flex-col selection:bg-[#D0311E] selection:text-white">
+
+  <!-- NAVBAR UTAMA -->
+  <header class="sticky top-0 z-40 bg-white/90 backdrop-blur-md border-b border-gray-200 shadow-sm transition-all duration-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <!-- Brand Logo -->
+      <a href="#katalog" class="flex items-center gap-2 group">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-[#D0311E] via-[#D0311E] to-[#B82819] flex items-center justify-center text-white font-black text-xl shadow-md group-hover:scale-105 transition-transform">
+          G
+        </div>
+        <div class="flex flex-col">
+          <span class="font-extrabold text-xl tracking-tight bg-gradient-to-r from-gray-900 via-[#8F2115] to-gray-800 bg-clip-text text-transparent">PIXELIN</span>
+          <span class="text-[10px] font-semibold tracking-wider text-[#D0311E] uppercase -mt-1">Google Pixel Specialist</span>
+        </div>
+      </a>
+
+      <!-- Navigation Links -->
+      <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
+        <a href="#katalog" class="text-gray-700 hover:text-[#D0311E] transition-colors flex items-center gap-1.5">
+          <i class="fa-solid fa-mobile-screen-button text-[#D0311E]"></i> Katalog Unit
+        </a>
+        <a href="#customers" class="text-gray-700 hover:text-[#D0311E] transition-colors flex items-center gap-1.5">
+          <i class="fa-solid fa-users text-[#D0311E]"></i> Our Customers
+        </a>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="flex items-center gap-3">
+        <a href="https://wa.me/6285601197498?text=Halo%20Admin%20Pixelin,%20saya%20ingin%20tanya%20stok%20unit%20HP%20Google%20Pixel" 
+           target="_blank" 
+           class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-[#D0311E] hover:bg-[#B82819] text-white font-medium text-sm shadow-sm transition-all hover:shadow-md active:scale-95">
+          <i class="fa-brands fa-whatsapp text-lg"></i>
+          <span>Hubungi Admin</span>
+        </a>
+
+        <!-- Admin Login Trigger Button -->
+        <button type="button"
+                onclick="openAdminLoginModal()" 
+                id="adminNavBtn"
+                class="p-2.5 rounded-xl border border-gray-200 bg-gray-100 hover:bg-gray-200 text-gray-700 transition-all text-sm font-medium flex items-center gap-2 cursor-pointer"
+                title="Akses Dashboard Admin">
+          <i class="fa-solid fa-lock text-gray-500"></i>
+          <span class="hidden sm:inline" id="adminNavText">Admin Login</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO BANNER -->
+  <section class="relative bg-gradient-to-b from-[#FEF3F1]/60 via-white to-gray-50 pt-10 pb-12 border-b border-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+        <div class="md:col-span-7 space-y-4">
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#FCE4E0] border border-[#F5C5BE] text-[#8F2115] text-xs font-semibold">
+            <span class="w-2 h-2 rounded-full bg-[#D0311E] animate-pulse"></span>
+            Stok Terupdate & 100% Original Google Pixel
+          </div>
+          <h1 class="text-3xl sm:text-5xl font-extrabold text-gray-900 tracking-tight leading-tight">
+            Pusat Jual Beli HP <span class="bg-gradient-to-r from-[#D0311E] to-[#B82819] bg-clip-text text-transparent">Google Pixel</span> Bergaransi & Terpercaya
+          </h1>
+          <p class="text-gray-600 text-base sm:text-lg max-w-2xl leading-relaxed">
+            Dapatkan pengalaman kamera flagship terbaik dengan harga terbaik. Unit telah diinspeksi fungsi menyeluruh, sinyal aman all operator, dan kondisi mulus siap pakai.
+          </p>
+          <div class="pt-2 flex flex-wrap gap-3">
+            <a href="#katalog" class="px-6 py-3 rounded-xl bg-[#D0311E] hover:bg-[#B82819] text-white font-semibold shadow-md hover:shadow-lg transition-all flex items-center gap-2">
+              <i class="fa-solid fa-store"></i> Lihat Katalog
+            </a>
+            <a href="#customers" class="px-6 py-3 rounded-xl bg-white hover:bg-gray-100 border border-gray-300 text-gray-700 font-semibold transition-all flex items-center gap-2">
+              <i class="fa-solid fa-images text-[#D0311E]"></i> Galeri Pembeli
+            </a>
+          </div>
+        </div>
+
+        <div class="md:col-span-5 flex justify-center">
+          <div class="relative w-full max-w-sm rounded-3xl p-6 bg-gradient-to-br from-gray-900 to-gray-800 text-white shadow-2xl border border-gray-700">
+            <div class="flex items-center justify-between border-b border-gray-700 pb-4 mb-4">
+              <div class="flex items-center gap-2">
+                <i class="fa-solid fa-shield-halved text-[#D0311E] text-xl"></i>
+                <span class="font-semibold text-sm">Jaminan Pixelin</span>
+              </div>
+              <span class="text-xs bg-[#D0311E]/20 text-[#F5C5BE] px-2.5 py-1 rounded-full border border-[#D0311E]/30">Verified</span>
+            </div>
+            <ul class="space-y-3 text-sm text-gray-300">
+              <li class="flex items-center gap-2.5">
+                <i class="fa-solid fa-check text-[#D0311E]"></i> Sinyal All Operator Permanen
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i class="fa-solid fa-check text-[#D0311E]"></i> QC Hardware & Batteray Health
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i class="fa-solid fa-check text-[#D0311E]"></i> Bebas Reset & Bebas Lock
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i class="fa-solid fa-check text-[#D0311E]"></i> Transaksi Aman & Admin Fast Response
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KATALOG UNIT / PRICELIST -->
+  <main class="flex-grow max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 py-10 space-y-12">
+    
+    <section id="katalog" class="space-y-6">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 border-b border-gray-200 pb-4">
+        <div>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-gray-900 flex items-center gap-2">
+            <i class="fa-solid fa-boxes-stacked text-[#D0311E]"></i> Katalog & Pricelist
+          </h2>
+          <p class="text-gray-500 text-sm mt-1">Pilih unit Google Pixel impianmu. Klik unit untuk detail foto lengkap!</p>
+        </div>
+
+        <!-- Filter & Search Toolbar -->
+        <div class="flex flex-wrap items-center gap-2">
+          <div class="relative min-w-[200px]">
+            <i class="fa-solid fa-magnifying-glass absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 text-sm"></i>
+            <input type="text" id="searchInput" oninput="filterCatalog()" placeholder="Cari tipe Pixel..." 
+                   class="w-full pl-9 pr-4 py-2 text-sm border border-gray-300 rounded-xl focus:ring-2 focus:ring-[#D0311E] focus:border-[#D0311E] outline-none transition">
+          </div>
+          <select id="seriesFilter" onchange="filterCatalog()" class="py-2 px-3 text-sm border border-gray-300 rounded-xl focus:ring-2 focus:ring-[#D0311E] bg-white">
+            <option value="">Semua Seri</option>
+            <option value="Pixel 9">Pixel 9 Series</option>
+            <option value="Pixel 8">Pixel 8 Series</option>
+            <option value="Pixel 7">Pixel 7 Series</option>
+            <option value="Pixel 6">Pixel 6 Series</option>
+            <option value="Pixel 5">Pixel 5 Series</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Container Card Grid Unit -->
+      <div id="catalogGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <!-- Dynamic Cards Inserted Here via JS -->
+      </div>
+
+      <!-- State Kosong / Loading -->
+      <div id="catalogLoading" class="text-center py-12 space-y-3">
+        <i class="fa-solid fa-circle-notch fa-spin text-3xl text-[#D0311E]"></i>
+        <p class="text-gray-500 font-medium text-sm">Memuat katalog unit Pixelin...</p>
+      </div>
+    </section>
+
+    <!-- SECTION OUR CUSTOMERS / GALERI -->
+    <section id="customers" class="space-y-6 pt-6">
+      <div class="border-b border-gray-200 pb-4">
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-gray-900 flex items-center gap-2">
+          <i class="fa-solid fa-camera-retro text-[#D0311E]"></i> Our Customers
+        </h2>
+        <p class="text-gray-500 text-sm mt-1">Galeri kepuasan pembeli dan bukti pengiriman unit Pixelin.</p>
+      </div>
+
+      <div id="customerGrid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        <!-- Customer items generated dynamically -->
+      </div>
+    </section>
+
+  </main>
+
+  <!-- MODAL / CONTAINER DASHBOARD ADMIN (HIDDEN BY DEFAULT) -->
+  <div id="adminDashboardView" class="fixed inset-0 z-[9999] bg-gray-900/80 backdrop-blur-md hidden overflow-y-auto" style="display: none;">
+    <div class="min-h-screen px-4 py-8 max-w-7xl mx-auto flex flex-col">
+      <!-- Admin Header Bar -->
+      <div class="bg-white rounded-2xl p-4 sm:p-6 shadow-xl mb-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 border border-gray-200">
+        <div class="flex items-center gap-3">
+          <div class="w-12 h-12 rounded-2xl bg-[#D0311E] text-white flex items-center justify-center text-xl font-bold shadow-md">
+            <i class="fa-solid fa-chart-line"></i>
+          </div>
+          <div>
+            <h2 class="text-xl font-bold text-gray-900">Dashboard Owner Pixelin</h2>
+            <p class="text-xs text-gray-500">Sistem Pencatatan Stok & Keuangan Terintegrasi All-in-One</p>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-3">
+          <button type="button" onclick="refreshAdminData()" class="px-3.5 py-2 rounded-xl bg-gray-100 hover:bg-gray-200 text-gray-700 text-xs font-semibold flex items-center gap-2 border border-gray-300">
+            <i class="fa-solid fa-rotate"></i> Refresh Data
+          </button>
+          <button type="button" onclick="closeAdminDashboard()" class="px-4 py-2 rounded-xl bg-red-600 hover:bg-red-700 text-white text-xs font-bold shadow-sm transition">
+            <i class="fa-solid fa-right-from-bracket"></i> Keluar Dashboard
+          </button>
+        </div>
+      </div>
+
+      <!-- Admin Navigation Tabs -->
+      <div class="flex flex-wrap gap-2 border-b border-gray-700 pb-3 mb-6">
+        <button type="button" onclick="switchAdminTab('stokTab')" id="btnTabStok" class="px-4 py-2.5 rounded-xl text-sm font-semibold transition bg-[#D0311E] text-white flex items-center gap-2 shadow">
+          <i class="fa-solid fa-boxes-stacked"></i> Stok Unit & Inventaris
+        </button>
+        <button type="button" onclick="switchAdminTab('transaksiTab')" id="btnTabTx" class="px-4 py-2.5 rounded-xl text-sm font-semibold transition bg-gray-800 text-gray-300 hover:text-white flex items-center gap-2">
+          <i class="fa-solid fa-cart-shopping"></i> Transaksi Penjualan
+        </button>
+        <button type="button" onclick="switchAdminTab('keuanganTab')" id="btnTabKeuangan" class="px-4 py-2.5 rounded-xl text-sm font-semibold transition bg-gray-800 text-gray-300 hover:text-white flex items-center gap-2">
+          <i class="fa-solid fa-wallet"></i> Laporan Keuangan & Cashflow
+        </button>
+        <button type="button" onclick="switchAdminTab('customerAdminTab')" id="btnTabCust" class="px-4 py-2.5 rounded-xl text-sm font-semibold transition bg-gray-800 text-gray-300 hover:text-white flex items-center gap-2">
+          <i class="fa-solid fa-images"></i> Kelola Galeri Customers
+        </button>
+      </div>
+
+      <!-- TAB CONTENT 1: STOK & INVENTARIS UNIT -->
+      <div id="stokTab" class="admin-tab-content space-y-6">
+        <!-- Form Input Terintegrasi Unit Baru -->
+        <div class="bg-white rounded-2xl p-6 shadow-md border border-gray-200 space-y-4">
+          <div class="flex items-center justify-between border-b pb-3">
+            <h3 class="text-base font-bold text-gray-900 flex items-center gap-2" id="formUnitTitle">
+              <i class="fa-solid fa-plus-circle text-[#D0311E]"></i> Input Unit Baru (Satu Input Terintegrasi Stok & Modal)
+            </h3>
+            <button onclick="resetUnitForm()" type="button" class="text-xs text-gray-500 hover:text-gray-700 underline">
+              Reset Form
+            </button>
+          </div>
+
+          <form id="unitForm" onsubmit="handleSaveUnit(event)" class="space-y-4">
+            <input type="hidden" id="unitRowIndex" value="">
+            <input type="hidden" id="unitIsEdit" value="false">
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+              <div>
+                <label class="block text-xs font-semibold text-gray-700 mb-1">Kode Unit *</label>
+                <input type="text" id="unitKode" required placeholder="Contoh: PXL-8P-01" class="w-full px-3 py-2 text-sm border rounded-xl focus:ring-2 focus:ring-[#D0311E] outline-none">
+              </div>
+              <div>
+                <label class="block text-xs font-semibold text-gray-700 mb-1">Nama Tipe Unit *</label>
+                <input type="text" id="unitNama" required placeholder="Contoh: Google Pixel 8 Pro 12/256GB" class="w-full px-3 py-2 text-sm border rounded-xl focus:ring-2 focus:ring-[#D0311E] outline-none">
+              </div>
+              <div>
+                <label class="block text-xs font-semibold text-gray-700 mb-1">
+                  Nomor Seri / IMEI <span class="text-amber-600 text-[10px] font-bold">(DISIMPAN PRIVAT)</span> *
+                </label>
+                <input type="text" id="unitSeri" required placeholder="IMEI / SN Khusus Admin" class="w-full px-3 py-2 text-sm border rounded-xl focus:ring-2 focus:ring-[#D0311E] outline-none bg-amber-50/50">
+              </div>
+              <div>
+                <label class="block text-xs font-semibold text-gray-700 mb-1">Jumlah Stok *</label>
+                <input type="number" id="unitStok" required min="0" value="1" class="w-full px-3 py-2 text-sm border rounded-xl focus:ring-2 focus:ring-[#D0311E] outline-none">
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-semibold text-gray-700 mb-1">Harga Beli Modal (Rp) *</label>
+                <input type="number" id="unitHargaBeli" required placeholder="Harga beli awal unit" class="w-full px-3 py-2 text-sm border rounded-xl focus:ring-2 focus:ring-[#D0311E] outline-none">
+              </div>
+              <div>
+                <label class="block text-xs font-semibold text-gray-700 mb-1">Harga Jual Katalog (Rp) *</label>
+                <input type="number" id="unitHargaJual" required placeholder="Harga penawaran publik" class="w-full px-3 py-2 text-sm border rounded-xl focus:ring-2 focus:ring-[#D0311E] outline-none">
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs font-semibold text-gray-700 mb-1">Deskripsi Kondisi & Kelengkapan Unit *</label>
+              <textarea id="unitDeskripsi" rows="2" required placeholder="Contoh: Mulus 98%, Fullset OEM, Batteray Health 95%, Sinyal All Operator Permanen" class="w-full px-3 py-2 text-sm border rounded-xl focus:ring-2 focus:ring-[#D0311E] outline-none"></textarea>
+            </div>
+
+            <!-- Input URL Foto Hingga 5 Gambar -->
+            <div class="space-y-2 pt-2 border-t border-gray-100">
+              <label class="block text-xs font-bold text-gray-800">URL Gambar Unit (Maksimal 5 Foto)</label>
+              <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-2">
+                <input type="url" id="unitFoto1" placeholder="Foto Utama (URL)" class="px-2.5 py-1.5 text-xs border rounded-lg">
+                <input type="url" id="unitFoto2" placeholder="Foto 2 (URL)" class="px-2.5 py-1.5 text-xs border rounded-lg">
+                <input type="url" id="unitFoto3" placeholder="Foto 3 (URL)" class="px-2.5 py-1.5 text-xs border rounded-lg">
+                <input type="url" id="unitFoto4" placeholder="Foto 4 (URL)" class="px-2.5 py-1.5 text-xs border rounded-lg">
+                <input type="url" id="unitFoto5" placeholder="Foto 5 (URL)" class="px-2.5 py-1.5 text-xs border rounded-lg">
+              </div>
+            </div>
+
+            <div class="flex items-center justify-end gap-3 pt-2">
+              <button type="submit" class="px-6 py-2.5 rounded-xl bg-[#D0311E] hover:bg-[#B82819] text-white font-bold text-sm shadow transition flex items-center gap-2">
+                <i class="fa-solid fa-floppy-disk"></i> Simpan & Terintegrasi Keuangan
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <!-- Tabel Inventaris Unit -->
+        <div class="bg-white rounded-2xl shadow-md border border-gray-200 overflow-hidden">
+          <div class="p-4 bg-gray-50 border-b flex items-center justify-between">
+            <h3 class="font-bold text-gray-800 text-sm flex items-center gap-2">
+              <i class="fa-solid fa-table-list text-[#D0311E]"></i> Daftar Inventaris & Stok Unit
+            </h3>
+            <span class="text-xs bg-[#FCE4E0] text-[#8F2115] px-2.5 py-1 rounded-full font-semibold" id="totalStokBadge">0 Unit</span>
+          </div>
+
+          <div class="overflow-x-auto">
+            <table class="w-full text-left text-xs text-gray-600">
+              <thead class="bg-gray-100 uppercase text-[10px] font-bold text-gray-700">
+                <tr>
+                  <th class="p-3">Kode</th>
+                  <th class="p-3">Nama Unit</th>
+                  <th class="p-3 text-amber-700">Nomor Seri (Privat)</th>
+                  <th class="p-3">Harga Beli</th>
+                  <th class="p-3">Harga Jual</th>
+                  <th class="p-3">Stok</th>
+                  <th class="p-3">Status</th>
+                  <th class="p-3 text-center">Aksi</th>
+                </tr>
+              </thead>
+              <tbody id="adminUnitTableBody" class="divide-y divide-gray-200">
+                <!-- Dynamic Rows -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- TAB CONTENT 2: BARANG KELUAR & PENJUALAN -->
+      <div id="transaksiTab" class="admin-tab-content space-y-6 hidden" style="display: none;">
+        <div class="bg-white rounded-2xl p-6 shadow-md border border-gray-200 space-y-4">
+          <h3 class="text-base font-bold text-gray-900 border-b pb-3 flex items-center gap-2">
+            <i class="fa-solid fa-cart-arrow-down text-[#D0311E]"></i> Catat Transaksi Penjualan Baru (Barang Keluar)
+          </h3>
+
+          <form id="saleForm" onsubmit="handleProcessSale(event)" class="space-y-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+              <div>
+                <label class="block text-xs font-semibold text-gray-700 mb-1">Pilih Unit Terjual *</label>
+                <select id="saleKodeUnit" required onchange="autoFillSaleData()" class="w-full px-3 py-2 text-sm border rounded-xl focus:ring-2 focus:ring-[#D0311E] outline-none bg-white">
+                  <option value="">-- Pilih Kode Unit --</option>
+                </select>
+              </div>
+              <div>
+                <label class="block text-xs font-semibold text-gray-700 mb-1">Nama Pembeli *</label>
+                <input type="text" id="saleNamaPembeli" required placeholder="Nama pembeli / COD" class="w-full px-3 py-2 text-sm border rounded-xl outline-none focus:ring-2 focus:ring-[#D0311E]">
+              </div>
+              <div>
+                <label class="block text-xs font-semibold text-gray-700 mb-1">Nomor Seri Unit</label>
+                <input type="text" id="saleNomorSeri" placeholder="Terisi otomatis" class="w-full px-3 py-2 text-sm border rounded-xl outline-none bg-gray-50">
+              </div>
+              <div>
+                <label class="block text-xs font-semibold text-gray-700 mb-1">Harga Terjual Deals (Rp) *</label>
+                <input type="number" id="saleHargaJual" required placeholder="Harga deal sepakat" class="w-full px-3 py-2 text-sm border rounded-xl outline-none focus:ring-2 focus:ring-[#D0311E]">
+              </div>
+            </div>
+
+            <div class="flex items-center justify-end gap-3">
+              <button type="submit" class="px-6 py-2.5 rounded-xl bg-[#D0311E] hover:bg-[#B82819] text-white font-bold text-sm shadow transition flex items-center gap-2">
+                <i class="fa-solid fa-circle-check"></i> Process Penjualan & Automatisasi Financial
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <!-- Tabel Riwayat Barang Keluar -->
+        <div class="bg-white rounded-2xl shadow-md border border-gray-200 overflow-hidden">
+          <div class="p-4 bg-gray-50 border-b">
+            <h3 class="font-bold text-gray-800 text-sm flex items-center gap-2">
+              <i class="fa-solid fa-list-check text-[#D0311E]"></i> Riwayat Barang Keluar & Penjualan
+            </h3>
+          </div>
+
+          <div class="overflow-x-auto">
+            <table class="w-full text-left text-xs text-gray-600">
+              <thead class="bg-gray-100 uppercase text-[10px] font-bold text-gray-700">
+                <tr>
+                  <th class="p-3">Tanggal</th>
+                  <th class="p-3">Kode Unit</th>
+                  <th class="p-3">Nama Unit</th>
+                  <th class="p-3">Pembeli</th>
+                  <th class="p-3">Modal</th>
+                  <th class="p-3">Harga Jual</th>
+                  <th class="p-3 text-[#B82819]">Laba (Profit)</th>
+                  <th class="p-3 text-center">Aksi (Typo)</th>
+                </tr>
+              </thead>
+              <tbody id="adminTxTableBody" class="divide-y divide-gray-200">
+                <!-- Dynamic Rows -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- TAB CONTENT 3: LAPORAN KEUANGAN & CASHFLOW HARIAN -->
+      <div id="keuanganTab" class="admin-tab-content space-y-6 hidden" style="display: none;">
+        <!-- Summary Cards Keuangan -->
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <div class="bg-white p-5 rounded-2xl border border-gray-200 shadow-sm space-y-1">
+            <span class="text-xs font-semibold text-gray-500">Total Pemasukan Kas</span>
+            <div class="text-xl font-black text-[#D0311E]" id="statPemasukan">Rp 0</div>
+          </div>
+          <div class="bg-white p-5 rounded-2xl border border-gray-200 shadow-sm space-y-1">
+            <span class="text-xs font-semibold text-gray-500">Total Pengeluaran / Restok</span>
+            <div class="text-xl font-black text-rose-600" id="statPengeluaran">Rp 0</div>
+          </div>
+          <div class="bg-white p-5 rounded-2xl border border-gray-200 shadow-sm space-y-1">
+            <span class="text-xs font-semibold text-gray-500">Net Profit / Keuntungan Bersih</span>
+            <div class="text-xl font-black text-[#D0311E]" id="statProfit">Rp 0</div>
+          </div>
+        </div>
+
+        <!-- Tabel Cashflow Harian -->
+        <div class="bg-white rounded-2xl shadow-md border border-gray-200 overflow-hidden">
+          <div class="p-4 bg-gray-50 border-b flex items-center justify-between">
+            <h3 class="font-bold text-gray-800 text-sm flex items-center gap-2">
+              <i class="fa-solid fa-money-bill-transfer text-[#D0311E]"></i> Cashflow Harian System
+            </h3>
+            <span class="text-xs text-gray-500">Dapat dikoreksi jika ada typo</span>
+          </div>
+
+          <div class="overflow-x-auto">
+            <table class="w-full text-left text-xs text-gray-600">
+              <thead class="bg-gray-100 uppercase text-[10px] font-bold text-gray-700">
+                <tr>
+                  <th class="p-3">Tanggal</th>
+                  <th class="p-3">Tipe</th>
+                  <th class="p-3">Kategori</th>
+                  <th class="p-3">Keterangan</th>
+                  <th class="p-3">Jumlah (Rp)</th>
+                  <th class="p-3 text-center">Aksi (Typo)</th>
+                </tr>
+              </thead>
+              <tbody id="adminCashflowTableBody" class="divide-y divide-gray-200">
+                <!-- Dynamic Cashflow Rows -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- TAB CONTENT 4: GALERI CUSTOMERS -->
+      <div id="customerAdminTab" class="admin-tab-content space-y-6 hidden" style="display: none;">
+        <div class="bg-white rounded-2xl p-6 shadow-md border border-gray-200 space-y-4">
+          <h3 class="text-base font-bold text-gray-900 border-b pb-3 flex items-center gap-2">
+            <i class="fa-solid fa-user-plus text-amber-600"></i> Tambah Foto Galeri Customer Baru
+          </h3>
+
+          <form id="custForm" onsubmit="handleSaveCustomer(event)" class="space-y-4">
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+              <div>
+                <label class="block text-xs font-semibold text-gray-700 mb-1">Nama Customer *</label>
+                <input type="text" id="custNama" required placeholder="Nama pembeli" class="w-full px-3 py-2 text-sm border rounded-xl outline-none">
+              </div>
+              <div>
+                <label class="block text-xs font-semibold text-gray-700 mb-1">Unit Dibeli *</label>
+                <input type="text" id="custUnit" required placeholder="Contoh: Google Pixel 7 Pro" class="w-full px-3 py-2 text-sm border rounded-xl outline-none">
+              </div>
+              <div>
+                <label class="block text-xs font-semibold text-gray-700 mb-1">URL Foto Bukti / COD *</label>
+                <input type="url" id="custFotoUrl" required placeholder="https://..." class="w-full px-3 py-2 text-sm border rounded-xl outline-none">
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs font-semibold text-gray-700 mb-1">Testimoni / Ulasan</label>
+              <input type="text" id="custTestimoni" placeholder="Barang mulus sesuai deskripsi, mantap!" class="w-full px-3 py-2 text-sm border rounded-xl outline-none">
+            </div>
+
+            <div class="flex justify-end">
+              <button type="submit" class="px-6 py-2.5 rounded-xl bg-amber-600 hover:bg-amber-700 text-white font-bold text-sm shadow transition flex items-center gap-2">
+                <i class="fa-solid fa-cloud-arrow-up"></i> Upload ke Galeri Our Customers
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL POPUP DETAIL UNIT (PUBLIK) -->
+  <div id="unitDetailModal" class="fixed inset-0 z-[9999] bg-gray-900/70 backdrop-blur-sm hidden flex items-center justify-center p-4" style="display: none;">
+    <div class="bg-white w-full max-w-2xl rounded-3xl shadow-2xl overflow-hidden border border-gray-100 flex flex-col max-h-[90vh]">
+      <!-- Header Modal -->
+      <div class="p-4 bg-gray-50 border-b border-gray-200 flex items-center justify-between">
+        <div class="flex items-center gap-2">
+          <span class="px-2.5 py-1 rounded-full text-xs font-bold bg-[#FCE4E0] text-[#8F2115]" id="modalUnitKode">PXL-01</span>
+          <h3 class="font-bold text-gray-900 text-base" id="modalUnitNama">Detail Google Pixel</h3>
+        </div>
+        <button type="button" onclick="closeUnitDetailModal()" class="w-8 h-8 rounded-full bg-gray-200 hover:bg-gray-300 text-gray-700 flex items-center justify-center transition">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <!-- Content Scrollable -->
+      <div class="p-6 overflow-y-auto space-y-6">
+        <!-- Main Image Preview & Gallery Slider -->
+        <div class="space-y-3">
+          <div class="w-full h-64 sm:h-80 bg-gray-100 rounded-2xl overflow-hidden flex items-center justify-center border border-gray-200">
+            <img id="modalMainImg" src="" alt="Main Unit" class="w-full h-full object-contain p-2">
+          </div>
+          <!-- Thumbnails -->
+          <div class="flex items-center gap-2 overflow-x-auto pb-1" id="modalThumbnails">
+            <!-- Dynamic Thumbnails -->
+          </div>
+        </div>
+
+        <!-- Price & Stock Badge -->
+        <div class="flex items-center justify-between bg-[#FEF3F1]/70 p-4 rounded-2xl border border-[#F5C5BE]">
+          <div>
+            <span class="text-xs text-gray-500 font-medium">Harga Penawaran</span>
+            <div class="text-2xl font-black text-[#D0311E]" id="modalUnitHarga">Rp 0</div>
+          </div>
+          <div class="text-right">
+            <span class="text-xs text-gray-500 font-medium">Ketersediaan Stok</span>
+            <div>
+              <span id="modalUnitStokBadge" class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-[#FCE4E0] text-[#8F2115]">
+                Tersedia
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Unit Description -->
+        <div class="space-y-2">
+          <h4 class="text-xs font-bold text-gray-700 uppercase tracking-wider">Deskripsi & Kondisi Unit</h4>
+          <p id="modalUnitDeskripsi" class="text-sm text-gray-600 leading-relaxed whitespace-pre-line bg-gray-50 p-4 rounded-2xl border border-gray-200">
+            -
+          </p>
+        </div>
+      </div>
+
+      <!-- Footer Button Direct WA -->
+      <div class="p-4 bg-gray-50 border-t border-gray-200">
+        <a id="modalWaBtn" href="#" target="_blank" class="w-full py-3 px-4 rounded-xl bg-[#D0311E] hover:bg-[#B82819] text-white font-bold text-center flex items-center justify-center gap-2 shadow-md transition">
+          <i class="fa-brands fa-whatsapp text-xl"></i>
+          <span>Hubungi Admin</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL LOGIN ADMIN -->
+  <div id="adminLoginModal" class="fixed inset-0 z-[9999] bg-gray-900/80 backdrop-blur-sm hidden flex items-center justify-center p-4" style="display: none;">
+    <div class="bg-white w-full max-w-md rounded-3xl shadow-2xl p-6 sm:p-8 space-y-6 border border-gray-200">
+      <div class="text-center space-y-2">
+        <div class="w-14 h-14 rounded-2xl bg-[#D0311E] text-white flex items-center justify-center text-2xl mx-auto shadow-md">
+          <i class="fa-solid fa-lock"></i>
+        </div>
+        <h3 class="text-2xl font-black text-gray-900">Akses Dashboard Admin</h3>
+        <p class="text-xs text-gray-500">Masukkan kode akses password aman untuk mengelola data Pixelin.</p>
+      </div>
+
+      <form onsubmit="handleAdminLogin(event)" class="space-y-4">
+        <div>
+          <label class="block text-xs font-bold text-gray-700 mb-1">Kode Akses Password Admin</label>
+          <div class="relative">
+            <input type="password" id="adminPasswordInput" required placeholder="••••••••" 
+                   class="w-full pl-4 pr-10 py-3 text-sm border border-gray-300 rounded-xl focus:ring-2 focus:ring-[#D0311E] outline-none">
+            <button type="button" onclick="togglePasswordVisibility()" class="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600">
+              <i class="fa-solid fa-eye" id="passEyeIcon"></i>
+            </button>
+          </div>
+        </div>
+
+        <div id="loginErrorMsg" class="hidden text-xs text-red-600 font-semibold bg-red-50 p-3 rounded-xl border border-red-200">
+          Kode akses salah! Silakan coba lagi.
+        </div>
+
+        <div class="flex items-center gap-3">
+          <button type="button" onclick="closeAdminLoginModal()" class="w-1/2 py-3 rounded-xl border border-gray-300 text-gray-700 font-semibold text-sm hover:bg-gray-100 transition">
+            Batal
+          </button>
+          <button type="submit" class="w-1/2 py-3 rounded-xl bg-[#D0311E] hover:bg-[#B82819] text-white font-bold text-sm shadow transition">
+            Masuk Admin
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- SCRIPT LOGIKA PIPELINE APPLICATION -->
+  <script>
+    let localData = {
+      units: [
+        {
+          kodeUnit: 'PXL-9P-01',
+          namaUnit: 'Google Pixel 9 Pro XL 16/256GB',
+          nomorSeri: '358291048291029',
+          hargaBeli: 14500000,
+          hargaJual: 16800000,
+          stok: 2,
+          deskripsi: 'Kondisi 99% Mulus Like New.\nFullset Box Original.\nBatteray Health 100%.\nSinyal All Operator Permanen Bebas Blokir.',
+          foto1: 'https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=600&auto=format&fit=crop',
+          foto2: 'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=600&auto=format&fit=crop',
+          foto3: '', foto4: '', foto5: '',
+          status: 'Tersedia'
+        },
+        {
+          kodeUnit: 'PXL-8A-02',
+          namaUnit: 'Google Pixel 8a 8/128GB Mint',
+          nomorSeri: '359182740192837',
+          hargaBeli: 6200000,
+          hargaJual: 7450000,
+          stok: 3,
+          deskripsi: 'Warna Mint Fresh Super Clean.\nKamera Utama 64MP Super Res Zoom.\nFullset Original Garansi Sinyal.',
+          foto1: 'https://images.unsplash.com/photo-1580910051074-3eb694886505?w=600&auto=format&fit=crop',
+          foto2: '', foto3: '', foto4: '', foto5: '',
+          status: 'Tersedia'
+        },
+        {
+          kodeUnit: 'PXL-7P-03',
+          namaUnit: 'Google Pixel 7 Pro 12/128GB Hazel',
+          nomorSeri: '357192830192847',
+          hargaBeli: 5800000,
+          hargaJual: 6900000,
+          stok: 1,
+          deskripsi: 'Kondisi 97% Mulus Layar Bening.\nTelephoto Zoom 30x Mantap.\nFree Case Premium.',
+          foto1: 'https://images.unsplash.com/photo-1565849904461-04a58ad377e0?w=600&auto=format&fit=crop',
+          foto2: '', foto3: '', foto4: '', foto5: '',
+          status: 'Tersedia'
+        }
+      ],
+      transactions: [
+        {
+          rowIndex: 2,
+          id: 'TRX-1001',
+          tanggal: '2026-09-10',
+          kodeUnit: 'PXL-7P-03',
+          namaUnit: 'Google Pixel 7 Pro 12/128GB Hazel',
+          nomorSeri: '357192830192847',
+          hargaBeli: 5800000,
+          hargaJual: 6900000,
+          keuntungan: 1100000,
+          namaPembeli: 'Budi Santoso',
+          catatan: 'Lunas COD Surabaya'
+        }
+      ],
+      cashflows: [
+        {
+          rowIndex: 2,
+          id: 'CF-1001',
+          tanggal: '2026-09-10',
+          tipe: 'Pemasukan',
+          kategori: 'Penjualan HP',
+          keterangan: 'Penjualan Pixel 7 Pro - Budi',
+          jumlah: 6900000,
+          refKodeUnit: 'PXL-7P-03'
+        },
+        {
+          rowIndex: 3,
+          id: 'CF-1002',
+          tanggal: '2026-09-08',
+          tipe: 'Pengeluaran',
+          kategori: 'Pembelian Stok Unit',
+          keterangan: 'Restok Pixel 9 Pro XL & Pixel 8a',
+          jumlah: 20700000,
+          refKodeUnit: 'PXL-9P-01'
+        }
+      ],
+      customers: [
+        {
+          id: 'CUST-01',
+          nama: 'Mas Dimas',
+          unit: 'Pixel 8 Pro Hazel',
+          fotoUrl: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=600&auto=format&fit=crop',
+          testimoni: 'Unit mulus banget, sinyal aman all operator!',
+          tanggal: '2026-09-05'
+        },
+        {
+          id: 'CUST-02',
+          nama: 'Mbak Rina',
+          unit: 'Pixel 7a Charcoal',
+          fotoUrl: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?w=600&auto=format&fit=crop',
+          testimoni: 'Admin ramah, fast respond via WA!',
+          tanggal: '2026-09-08'
+        }
+      ]
+    };
+
+    let isLoggedIn = false;
+
+    function formatRupiah(number) {
+      return new Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR', maximumFractionDigits: 0 }).format(number || 0);
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      loadPublicCatalog();
+    });
+
+    function loadPublicCatalog() {
+      if (typeof google !== 'undefined' && google.script && google.script.run) {
+        google.script.run
+          .withSuccessHandler((res) => {
+            if (res && res.units) {
+              localData.units = res.units;
+              localData.customers = res.customers || [];
+            }
+            renderCatalog(localData.units);
+            renderCustomerGallery(localData.customers);
+          })
+          .getPublicCatalogData();
+      } else {
+        renderCatalog(localData.units);
+        renderCustomerGallery(localData.customers);
+      }
+    }
+
+    function renderCatalog(units) {
+      const container = document.getElementById('catalogGrid');
+      const loader = document.getElementById('catalogLoading');
+      if (loader) loader.style.display = 'none';
+
+      if (!units || units.length === 0) {
+        container.innerHTML = `
+          <div class="col-span-full py-12 text-center text-gray-500 space-y-2">
+            <i class="fa-solid fa-box-open text-4xl text-gray-300"></i>
+            <p>Belum ada unit Pixel yang tersedia saat ini.</p>
+          </div>
+        `;
+        return;
+      }
+
+      container.innerHTML = units.map(u => {
+        const mainImg = u.foto1 || 'https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=600&auto=format&fit=crop';
+        const isAvailable = (u.stok > 0) && (u.status !== 'Habis');
+        
+        return `
+          <div class="bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group">
+            <div class="relative h-52 bg-gray-100 overflow-hidden cursor-pointer" onclick="openUnitDetail('${u.kodeUnit}')">
+              <img src="${mainImg}" alt="${u.namaUnit}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute top-3 left-3 bg-white/90 backdrop-blur-sm px-2.5 py-1 rounded-full text-[10px] font-bold text-gray-800 shadow-sm">
+                ${u.kodeUnit}
+              </div>
+              <div class="absolute top-3 right-3">
+                <span class="px-2.5 py-1 rounded-full text-[10px] font-bold ${isAvailable ? 'bg-[#D0311E] text-white' : 'bg-rose-500 text-white'} shadow-sm">
+                  ${isAvailable ? `Stok: ${u.stok}` : 'Terjual / Habis'}
+                </span>
+              </div>
+            </div>
+
+            <div class="p-5 flex-grow flex flex-col justify-between space-y-4">
+              <div>
+                <h3 class="font-bold text-gray-900 text-base line-clamp-2 cursor-pointer hover:text-[#D0311E] transition" onclick="openUnitDetail('${u.kodeUnit}')">
+                  ${u.namaUnit}
+                </h3>
+                <p class="text-xs text-gray-500 line-clamp-2 mt-1">
+                  ${u.deskripsi}
+                </p>
+              </div>
+
+              <div class="pt-2 border-t border-gray-100 space-y-3">
+                <div class="flex items-baseline justify-between">
+                  <span class="text-xs text-gray-500">Harga:</span>
+                  <span class="text-lg font-black text-[#D0311E]">${formatRupiah(u.hargaJual)}</span>
+                </div>
+
+                <div class="grid grid-cols-2 gap-2">
+                  <button type="button" onclick="openUnitDetail('${u.kodeUnit}')" class="py-2 px-3 rounded-xl bg-gray-100 hover:bg-gray-200 text-gray-700 text-xs font-semibold transition">
+                    Detail Unit
+                  </button>
+                  <a href="https://wa.me/6285601197498?text=Halo%20Admin%20Pixelin,%20saya%20berminat%20dengan%20${encodeURIComponent(u.namaUnit)}%20(Kode:%20${u.kodeUnit})" 
+                     target="_blank" 
+                     class="py-2 px-3 rounded-xl bg-[#D0311E] hover:bg-[#B82819] text-white text-xs font-bold text-center flex items-center justify-center gap-1 shadow-sm transition">
+                    <i class="fa-brands fa-whatsapp"></i> Hubungi Admin
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    function filterCatalog() {
+      const search = document.getElementById('searchInput').value.toLowerCase();
+      const series = document.getElementById('seriesFilter').value.toLowerCase();
+
+      const filtered = localData.units.filter(u => {
+        const matchSearch = u.namaUnit.toLowerCase().includes(search) || u.kodeUnit.toLowerCase().includes(search);
+        const matchSeries = series === '' || u.namaUnit.toLowerCase().includes(series);
+        return matchSearch && matchSeries;
+      });
+
+      renderCatalog(filtered);
+    }
+
+    function renderCustomerGallery(customers) {
+      const container = document.getElementById('customerGrid');
+      if (!customers || customers.length === 0) {
+        container.innerHTML = `<p class="col-span-full text-xs text-gray-400 text-center py-4">Belum ada foto galeri customer.</p>`;
+        return;
+      }
+
+      container.innerHTML = customers.map(c => `
+        <div class="bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-sm space-y-2 p-3">
+          <div class="h-44 bg-gray-100 rounded-xl overflow-hidden">
+            <img src="${c.fotoUrl}" alt="${c.nama}" class="w-full h-full object-cover">
+          </div>
+          <div>
+            <span class="text-[10px] bg-[#FCE4E0] text-[#8F2115] font-bold px-2 py-0.5 rounded-full">${c.unit}</span>
+            <h4 class="font-bold text-xs text-gray-900 mt-1">${c.nama}</h4>
+            <p class="text-[11px] text-gray-500 italic">"${c.testimoni}"</p>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function openUnitDetail(kodeUnit) {
+      const unit = localData.units.find(u => u.kodeUnit === kodeUnit);
+      if (!unit) return;
+
+      document.getElementById('modalUnitKode').innerText = unit.kodeUnit;
+      document.getElementById('modalUnitNama').innerText = unit.namaUnit;
+      document.getElementById('modalUnitHarga').innerText = formatRupiah(unit.hargaJual);
+      document.getElementById('modalUnitDeskripsi').innerText = unit.deskripsi || 'Tidak ada deskripsi tambahan.';
+
+      const stokBadge = document.getElementById('modalUnitStokBadge');
+      if (unit.stok > 0) {
+        stokBadge.innerText = `Tersedia (${unit.stok} Unit)`;
+        stokBadge.className = 'inline-block px-3 py-1 rounded-full text-xs font-bold bg-[#FCE4E0] text-[#8F2115]';
+      } else {
+        stokBadge.innerText = 'Stok Habis';
+        stokBadge.className = 'inline-block px-3 py-1 rounded-full text-xs font-bold bg-rose-100 text-rose-800';
+      }
+
+      const photos = [unit.foto1, unit.foto2, unit.foto3, unit.foto4, unit.foto5].filter(f => f && f.trim() !== '');
+      const mainImg = document.getElementById('modalMainImg');
+      const thumbContainer = document.getElementById('modalThumbnails');
+
+      if (photos.length > 0) {
+        mainImg.src = photos[0];
+        thumbContainer.innerHTML = photos.map((p, idx) => `
+          <button type="button" onclick="document.getElementById('modalMainImg').src='${p}'" class="w-14 h-14 rounded-lg overflow-hidden border-2 border-gray-200 hover:border-[#D0311E] focus:border-[#D0311E] flex-shrink-0 transition">
+            <img src="${p}" class="w-full h-full object-cover">
+          </button>
+        `).join('');
+      } else {
+        mainImg.src = 'https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=600&auto=format&fit=crop';
+        thumbContainer.innerHTML = '';
+      }
+
+      const waBtn = document.getElementById('modalWaBtn');
+      waBtn.href = `https://wa.me/6285601197498?text=Halo%20Admin%20Pixelin,%20saya%20berminat%20dengan%20unit%20${encodeURIComponent(unit.namaUnit)}%20(Kode:%20${unit.kodeUnit})`;
+
+      const modal = document.getElementById('unitDetailModal');
+      modal.classList.remove('hidden');
+      modal.style.display = 'flex';
+    }
+
+    function closeUnitDetailModal() {
+      const modal = document.getElementById('unitDetailModal');
+      modal.classList.add('hidden');
+      modal.style.display = 'none';
+    }
+
+    // FUNGSI UTAMA BUKA MODAL ADMIN LOGIN (FIXED)
+    function openAdminLoginModal() {
+      const dashView = document.getElementById('adminDashboardView');
+      const loginModal = document.getElementById('adminLoginModal');
+
+      if (isLoggedIn) {
+        if (dashView) {
+          dashView.classList.remove('hidden');
+          dashView.style.display = 'block';
+        }
+      } else {
+        if (loginModal) {
+          loginModal.classList.remove('hidden');
+          loginModal.style.display = 'flex';
+        }
+      }
+    }
+
+    function closeAdminLoginModal() {
+      const loginModal = document.getElementById('adminLoginModal');
+      if (loginModal) {
+        loginModal.classList.add('hidden');
+        loginModal.style.display = 'none';
+      }
+    }
+
+    function togglePasswordVisibility() {
+      const passInput = document.getElementById('adminPasswordInput');
+      const eyeIcon = document.getElementById('passEyeIcon');
+      if (passInput.type === 'password') {
+        passInput.type = 'text';
+        eyeIcon.className = 'fa-solid fa-eye-slash';
+      } else {
+        passInput.type = 'password';
+        eyeIcon.className = 'fa-solid fa-eye';
+      }
+    }
+
+    function handleAdminLogin(e) {
+      e.preventDefault();
+      const inputPass = document.getElementById('adminPasswordInput').value;
+
+      if (typeof google !== 'undefined' && google.script && google.script.run) {
+        google.script.run
+          .withSuccessHandler((res) => {
+            if (res.success) {
+              isLoggedIn = true;
+              closeAdminLoginModal();
+              document.getElementById('adminNavText').innerText = 'Dashboard Owner';
+              const dashView = document.getElementById('adminDashboardView');
+              dashView.classList.remove('hidden');
+              dashView.style.display = 'block';
+              refreshAdminData();
+            } else {
+              document.getElementById('loginErrorMsg').classList.remove('hidden');
+            }
+          })
+          .verifyAdminPassword(inputPass);
+      } else {
+        if (inputPass === 'tikbraownernya') {
+          isLoggedIn = true;
+          closeAdminLoginModal();
+          document.getElementById('adminNavText').innerText = 'Dashboard Owner';
+          const dashView = document.getElementById('adminDashboardView');
+          dashView.classList.remove('hidden');
+          dashView.style.display = 'block';
+          refreshAdminData();
+        } else {
+          document.getElementById('loginErrorMsg').classList.remove('hidden');
+        }
+      }
+    }
+
+    function closeAdminDashboard() {
+      const dashView = document.getElementById('adminDashboardView');
+      dashView.classList.add('hidden');
+      dashView.style.display = 'none';
+    }
+
+    function switchAdminTab(tabId) {
+      document.querySelectorAll('.admin-tab-content').forEach(el => {
+        el.classList.add('hidden');
+        el.style.display = 'none';
+      });
+
+      const activeEl = document.getElementById(tabId);
+      if (activeEl) {
+        activeEl.classList.remove('hidden');
+        activeEl.style.display = 'block';
+      }
+
+      const btnStok = document.getElementById('btnTabStok');
+      const btnTx = document.getElementById('btnTabTx');
+      const btnKeuangan = document.getElementById('btnTabKeuangan');
+      const btnCust = document.getElementById('btnTabCust');
+
+      const defaultClass = 'px-4 py-2.5 rounded-xl text-sm font-semibold transition bg-gray-800 text-gray-300 hover:text-white flex items-center gap-2';
+      const activeClass = 'px-4 py-2.5 rounded-xl text-sm font-semibold transition bg-[#D0311E] text-white flex items-center gap-2 shadow';
+
+      if(btnStok) btnStok.className = tabId === 'stokTab' ? activeClass : defaultClass;
+      if(btnTx) btnTx.className = tabId === 'transaksiTab' ? activeClass : defaultClass;
+      if(btnKeuangan) btnKeuangan.className = tabId === 'keuanganTab' ? activeClass : defaultClass;
+      if(btnCust) btnCust.className = tabId === 'customerAdminTab' ? activeClass : defaultClass;
+    }
+
+    function refreshAdminData() {
+      if (typeof google !== 'undefined' && google.script && google.script.run) {
+        google.script.run
+          .withSuccessHandler((res) => {
+            if (res.success) {
+              localData.units = res.units || [];
+              localData.transactions = res.transactions || [];
+              localData.cashflows = res.cashflows || [];
+              localData.customers = res.customers || [];
+              renderAdminTables();
+            }
+          })
+          .getAdminDashboardData();
+      } else {
+        renderAdminTables();
+      }
+    }
+
+    function renderAdminTables() {
+      const unitBody = document.getElementById('adminUnitTableBody');
+      if (document.getElementById('totalStokBadge')) {
+        document.getElementById('totalStokBadge').innerText = `${localData.units.length} Unit Total`;
+      }
+
+      if (unitBody) {
+        unitBody.innerHTML = localData.units.map(u => `
+          <tr class="hover:bg-gray-50">
+            <td class="p-3 font-bold text-gray-900">${u.kodeUnit}</td>
+            <td class="p-3 font-medium">${u.namaUnit}</td>
+            <td class="p-3 font-mono text-amber-700 bg-amber-50 font-bold">${u.nomorSeri || '-'}</td>
+            <td class="p-3 text-gray-600">${formatRupiah(u.hargaBeli)}</td>
+            <td class="p-3 text-[#D0311E] font-bold">${formatRupiah(u.hargaJual)}</td>
+            <td class="p-3 font-bold">${u.stok}</td>
+            <td class="p-3">
+              <span class="px-2 py-0.5 rounded text-[10px] font-bold ${u.stok > 0 ? 'bg-[#FCE4E0] text-[#8F2115]' : 'bg-rose-100 text-rose-800'}">
+                ${u.stok > 0 ? 'Tersedia' : 'Habis'}
+              </span>
+            </td>
+            <td class="p-3 text-center space-x-1">
+              <button type="button" onclick="editUnit('${u.kodeUnit}')" class="px-2 py-1 bg-[#FCE4E0] text-[#B82819] rounded hover:bg-[#F5C5BE] font-semibold text-[11px]">
+                Edit
+              </button>
+              <button type="button" onclick="deleteRecord('Data_Unit', ${u.rowIndex || 0}, '${u.kodeUnit}')" class="px-2 py-1 bg-rose-100 text-rose-700 rounded hover:bg-rose-200 font-semibold text-[11px]">
+                Hapus
+              </button>
+            </td>
+          </tr>
+        `).join('');
+      }
+
+      const saleSelect = document.getElementById('saleKodeUnit');
+      if (saleSelect) {
+        saleSelect.innerHTML = `<option value="">-- Pilih Kode Unit --</option>` + 
+          localData.units.map(u => `<option value="${u.kodeUnit}">${u.kodeUnit} - ${u.namaUnit} (Stok: ${u.stok})</option>`).join('');
+      }
+
+      const txBody = document.getElementById('adminTxTableBody');
+      if (txBody) {
+        txBody.innerHTML = localData.transactions.map(t => `
+          <tr class="hover:bg-gray-50">
+            <td class="p-3">${t.tanggal}</td>
+            <td class="p-3 font-bold">${t.kodeUnit}</td>
+            <td class="p-3">${t.namaUnit}</td>
+            <td class="p-3 font-semibold">${t.namaPembeli}</td>
+            <td class="p-3">${formatRupiah(t.hargaBeli)}</td>
+            <td class="p-3 font-bold text-gray-900">${formatRupiah(t.hargaJual)}</td>
+            <td class="p-3 font-black text-[#D0311E]">${formatRupiah(t.keuntungan)}</td>
+            <td class="p-3 text-center">
+              <button type="button" onclick="deleteRecord('Barang_Keluar_Penjualan', ${t.rowIndex || 0}, '${t.id}')" class="px-2 py-1 bg-rose-100 text-rose-700 rounded hover:bg-rose-200 font-semibold text-[11px]">
+                Hapus (Typo)
+              </button>
+            </td>
+          </tr>
+        `).join('');
+      }
+
+      let totalMasuk = 0;
+      let totalKeluar = 0;
+
+      const cfBody = document.getElementById('adminCashflowTableBody');
+      if (cfBody) {
+        cfBody.innerHTML = localData.cashflows.map(c => {
+          if (c.tipe === 'Pemasukan') totalMasuk += Number(c.jumlah || 0);
+          if (c.tipe === 'Pengeluaran') totalKeluar += Number(c.jumlah || 0);
+
+          return `
+            <tr class="hover:bg-gray-50">
+              <td class="p-3">${c.tanggal}</td>
+              <td class="p-3">
+                <span class="px-2 py-0.5 rounded text-[10px] font-bold ${c.tipe === 'Pemasukan' ? 'bg-[#FCE4E0] text-[#8F2115]' : 'bg-rose-100 text-rose-800'}">
+                  ${c.tipe}
+                </span>
+              </td>
+              <td class="p-3 font-medium">${c.kategori}</td>
+              <td class="p-3">${c.keterangan}</td>
+              <td class="p-3 font-bold ${c.tipe === 'Pemasukan' ? 'text-[#D0311E]' : 'text-rose-600'}">
+                ${formatRupiah(c.jumlah)}
+              </td>
+              <td class="p-3 text-center">
+                <button type="button" onclick="deleteRecord('Cashflow_Harian', ${c.rowIndex || 0}, '${c.id}')" class="px-2 py-1 bg-rose-100 text-rose-700 rounded hover:bg-rose-200 font-semibold text-[11px]">
+                  Hapus (Typo)
+                </button>
+              </td>
+            </tr>
+          `;
+        }).join('');
+      }
+
+      if (document.getElementById('statPemasukan')) document.getElementById('statPemasukan').innerText = formatRupiah(totalMasuk);
+      if (document.getElementById('statPengeluaran')) document.getElementById('statPengeluaran').innerText = formatRupiah(totalKeluar);
+      if (document.getElementById('statProfit')) document.getElementById('statProfit').innerText = formatRupiah(totalMasuk - totalKeluar);
+
+      renderCatalog(localData.units);
+    }
+
+    function handleSaveUnit(e) {
+      e.preventDefault();
+      
+      const unitPayload = {
+        rowIndex: document.getElementById('unitRowIndex').value,
+        isEdit: document.getElementById('unitIsEdit').value === 'true',
+        kodeUnit: document.getElementById('unitKode').value.trim(),
+        namaUnit: document.getElementById('unitNama').value.trim(),
+        nomorSeri: document.getElementById('unitSeri').value.trim(),
+        stok: Number(document.getElementById('unitStok').value),
+        hargaBeli: Number(document.getElementById('unitHargaBeli').value),
+        hargaJual: Number(document.getElementById('unitHargaJual').value),
+        deskripsi: document.getElementById('unitDeskripsi').value,
+        foto1: document.getElementById('unitFoto1').value,
+        foto2: document.getElementById('unitFoto2').value,
+        foto3: document.getElementById('unitFoto3').value,
+        foto4: document.getElementById('unitFoto4').value,
+        foto5: document.getElementById('unitFoto5').value
+      };
+
+      if (typeof google !== 'undefined' && google.script && google.script.run) {
+        google.script.run
+          .withSuccessHandler((res) => {
+            alertCustom(res.message);
+            resetUnitForm();
+            refreshAdminData();
+          })
+          .saveUnitIntegrated(unitPayload);
+      } else {
+        const existingIdx = localData.units.findIndex(u => u.kodeUnit === unitPayload.kodeUnit);
+        if (existingIdx >= 0 && unitPayload.isEdit) {
+          localData.units[existingIdx] = { ...localData.units[existingIdx], ...unitPayload };
+        } else {
+          localData.units.push({ ...unitPayload, status: 'Tersedia' });
+          localData.cashflows.push({
+            id: 'CF-' + Date.now(),
+            tanggal: new Date().toISOString().split('T')[0],
+            tipe: 'Pengeluaran',
+            kategori: 'Pembelian Stok Unit',
+            keterangan: `Restok: ${unitPayload.namaUnit}`,
+            jumlah: unitPayload.hargaBeli * unitPayload.stok,
+            refKodeUnit: unitPayload.kodeUnit
+          });
+        }
+        alertCustom('Data Unit & Keuangan Berhasil Disimpan!');
+        resetUnitForm();
+        renderAdminTables();
+      }
+    }
+
+    function editUnit(kodeUnit) {
+      const u = localData.units.find(item => item.kodeUnit === kodeUnit);
+      if (!u) return;
+
+      document.getElementById('formUnitTitle').innerHTML = `<i class="fa-solid fa-pen-to-square text-amber-600"></i> Edit Unit (${u.kodeUnit})`;
+      document.getElementById('unitRowIndex').value = u.rowIndex || '';
+      document.getElementById('unitIsEdit').value = 'true';
+
+      document.getElementById('unitKode').value = u.kodeUnit;
+      document.getElementById('unitKode').readOnly = true;
+      document.getElementById('unitNama').value = u.namaUnit;
+      document.getElementById('unitSeri').value = u.nomorSeri || '';
+      document.getElementById('unitStok').value = u.stok;
+      document.getElementById('unitHargaBeli').value = u.hargaBeli;
+      document.getElementById('unitHargaJual').value = u.hargaJual;
+      document.getElementById('unitDeskripsi').value = u.deskripsi;
+
+      document.getElementById('unitFoto1').value = u.foto1 || '';
+      document.getElementById('unitFoto2').value = u.foto2 || '';
+      document.getElementById('unitFoto3').value = u.foto3 || '';
+      document.getElementById('unitFoto4').value = u.foto4 || '';
+      document.getElementById('unitFoto5').value = u.foto5 || '';
+    }
+
+    function resetUnitForm() {
+      document.getElementById('formUnitTitle').innerHTML = `<i class="fa-solid fa-plus-circle text-[#D0311E]"></i> Input Unit Baru (Satu Input Terintegrasi Stok & Modal)`;
+      document.getElementById('unitForm').reset();
+      document.getElementById('unitKode').readOnly = false;
+      document.getElementById('unitIsEdit').value = 'false';
+      document.getElementById('unitRowIndex').value = '';
+    }
+
+    function autoFillSaleData() {
+      const kode = document.getElementById('saleKodeUnit').value;
+      const u = localData.units.find(item => item.kodeUnit === kode);
+      if (u) {
+        document.getElementById('saleNomorSeri').value = u.nomorSeri || '';
+        document.getElementById('saleHargaJual').value = u.hargaJual || '';
+      }
+    }
+
+    function handleProcessSale(e) {
+      e.preventDefault();
+      const salePayload = {
+        kodeUnit: document.getElementById('saleKodeUnit').value,
+        namaPembeli: document.getElementById('saleNamaPembeli').value,
+        nomorSeri: document.getElementById('saleNomorSeri').value,
+        hargaJual: Number(document.getElementById('saleHargaJual').value)
+      };
+
+      if (typeof google !== 'undefined' && google.script && google.script.run) {
+        google.script.run
+          .withSuccessHandler((res) => {
+            alertCustom(res.message);
+            document.getElementById('saleForm').reset();
+            refreshAdminData();
+          })
+          .processSaleTransaction(salePayload);
+      } else {
+        const u = localData.units.find(item => item.kodeUnit === salePayload.kodeUnit);
+        if (u) {
+          u.stok = Math.max(0, u.stok - 1);
+          const laba = salePayload.hargaJual - u.hargaBeli;
+
+          localData.transactions.push({
+            id: 'TRX-' + Date.now(),
+            tanggal: new Date().toISOString().split('T')[0],
+            kodeUnit: u.kodeUnit,
+            namaUnit: u.namaUnit,
+            nomorSeri: salePayload.nomorSeri,
+            hargaBeli: u.hargaBeli,
+            hargaJual: salePayload.hargaJual,
+            keuntungan: laba,
+            namaPembeli: salePayload.namaPembeli
+          });
+
+          localData.cashflows.push({
+            id: 'CF-' + Date.now(),
+            tanggal: new Date().toISOString().split('T')[0],
+            tipe: 'Pemasukan',
+            kategori: 'Penjualan HP',
+            keterangan: `Penjualan: ${u.namaUnit} - Pembeli: ${salePayload.namaPembeli}`,
+            jumlah: salePayload.hargaJual,
+            refKodeUnit: u.kodeUnit
+          });
+
+          alertCustom('Penjualan Berhasil Diperbarui & Keuangan Terupdate!');
+          document.getElementById('saleForm').reset();
+          renderAdminTables();
+        }
+      }
+    }
+
+    function handleSaveCustomer(e) {
+      e.preventDefault();
+      const custData = {
+        nama: document.getElementById('custNama').value,
+        unit: document.getElementById('custUnit').value,
+        fotoUrl: document.getElementById('custFotoUrl').value,
+        testimoni: document.getElementById('custTestimoni').value
+      };
+
+      if (typeof google !== 'undefined' && google.script && google.script.run) {
+        google.script.run
+          .withSuccessHandler((res) => {
+            alertCustom(res.message);
+            document.getElementById('custForm').reset();
+            refreshAdminData();
+          })
+          .saveCustomerGallery(custData);
+      } else {
+        localData.customers.push({ ...custData, id: 'CUST-' + Date.now(), tanggal: new Date().toISOString().split('T')[0] });
+        alertCustom('Galeri Customer Ditambahkan!');
+        document.getElementById('custForm').reset();
+        renderCustomerGallery(localData.customers);
+      }
+    }
+
+    function deleteRecord(sheetName, rowIndex, id) {
+      if (!confirmModal(`Apakah Anda yakin ingin menghapus/dikoreksi baris data (${id}) ini?`)) return;
+
+      if (typeof google !== 'undefined' && google.script && google.script.run && rowIndex > 0) {
+        google.script.run
+          .withSuccessHandler((res) => {
+            alertCustom(res.message);
+            refreshAdminData();
+          })
+          .deleteRecordByRowIndex(sheetName, rowIndex);
+      } else {
+        if (sheetName === 'Data_Unit') localData.units = localData.units.filter(u => u.kodeUnit !== id);
+        if (sheetName === 'Barang_Keluar_Penjualan') localData.transactions = localData.transactions.filter(t => t.id !== id);
+        if (sheetName === 'Cashflow_Harian') localData.cashflows = localData.cashflows.filter(c => c.id !== id);
+
+        alertCustom('Data typo berhasil dikoreksi!');
+        renderAdminTables();
+      }
+    }
+
+    function alertCustom(msg) {
+      const modal = document.createElement('div');
+      modal.className = 'fixed inset-0 z-[10000] bg-black/50 flex items-center justify-center p-4';
+      modal.innerHTML = `
+        <div class="bg-white rounded-2xl p-6 max-w-sm w-full space-y-4 text-center shadow-xl">
+          <div class="w-12 h-12 bg-[#FCE4E0] text-[#D0311E] rounded-full flex items-center justify-center mx-auto text-xl">
+            <i class="fa-solid fa-check"></i>
+          </div>
+          <p class="text-sm font-semibold text-gray-800">${msg}</p>
+          <button type="button" onclick="this.parentElement.parentElement.remove()" class="w-full py-2.5 bg-[#D0311E] text-white font-bold rounded-xl text-xs hover:bg-[#B82819]">
+            OK
+          </button>
+        </div>
+      `;
+      document.body.appendChild(modal);
+    }
+
+    function confirmModal(msg) {
+      return window.confirm(msg);
+    }
+  </script>
+
+</body>
+</html>
